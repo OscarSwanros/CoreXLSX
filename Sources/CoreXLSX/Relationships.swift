@@ -95,6 +95,14 @@ public struct Relationship: Codable, Equatable {
       http://schemas.openxmlformats.org/officeDocument/2006/relationships/\
       customXml
       """
+    case person =
+      """
+      http://schemas.microsoft.com/office/2017/10/relationships/person
+      """
+    case vbaProject =
+      """
+      http://schemas.microsoft.com/office/2006/relationships/vbaProject
+      """
   }
 
   public let id: String
